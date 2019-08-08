@@ -5,10 +5,6 @@ library(htmlwidgets)
 
 vurl <- read_csv("VetorEnd.csv")
 
-#vurl <- as.data.frame (vurl)
-
-vurl1 <- c("https://www.gunpolicy.org/firearms/region/united-states","https://www.gunpolicy.org/firearms/region/united-kingdom")
-
 CriaDados <- function(url)
 {
   Nome <- str_sub(url, 43, -1)
