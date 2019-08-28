@@ -50,7 +50,7 @@ belgium,2015,6.8610114
 belgium,2010,8.18
 belgium,2006,18.981
 belgium,2005,17.29
-belize,2017,101
+belize,2017,10
 belize,2012,10.223
 benin,2017,0.31
 benin,2007,1.42
@@ -88,7 +88,7 @@ cabo-verde,2007,5.41
 cayman-islands,NA,NA
 central-african-republic,2017,1.801
 central-african-republic,2007,1.02
-chad,2017,11
+chad,2017,1
 chad,2007,1.12
 chile,2017,12.101
 chile,2016,4.799104
@@ -110,7 +110,7 @@ congo-drc,2007,1.43
 congo-roc,2017,2.402
 congo-roc,2007,2.71
 cook-islands,2002,2.52
-costa-rica,2017,101
+costa-rica,2017,10
 costa-rica,2012,8.6234
 cote-d-ivoire,2017,4.401
 cote-d-ivoire,2007,2.42
@@ -118,7 +118,7 @@ croatia,2017,13.701
 croatia,2007,21.72
 cuba,2017,2.101
 cuba,2012,2.023
-cyprus,2017,341
+cyprus,2017,34
 cyprus,2007,36.42
 czech-republic,2017,12.501
 czech-republic,2013,8.33674
@@ -137,13 +137,13 @@ ecuador,2017,2.401
 ecuador,2012,2.524
 egypt,2017,4.101
 egypt,2007,3.52
-el-salvador,2017,121
+el-salvador,2017,12
 el-salvador,2012,9.724
 equatorial-guinea,2017,12.501
 equatorial-guinea,2007,19.92
 eritrea,2017,0.401
 eritrea,2007,0.52
-estonia,2017,51
+estonia,2017,5
 estonia,2007,9.22
 ethiopia,2017,0.401
 ethiopia,2007,0.42
@@ -170,7 +170,7 @@ georgia,2007,7.32
 germany,2016,32.078
 germany,2013,31.42
 germany,2005,30.36
-ghana,2017,81
+ghana,2017,8
 ghana,2016,8.554
 ghana,2012,2
 gibraltar,2017,4.101
@@ -182,7 +182,7 @@ guadeloupe,2017,8.501
 guam,2017,11.501
 guatemala,2017,12.101
 guatemala,2012,11.57634
-guinea,2017,11
+guinea,2017,1
 guinea,2007,1.22
 guinea-bissau,2017,1.501
 guinea-bissau,2007,1.62
@@ -302,7 +302,7 @@ mexico,2005,15.073
 mexico,2004,1.703896
 micronesia-fsm,2017,0.701
 micronesia-fsm,2002,0.492
-moldova,2017,31
+moldova,2017,3
 moldova,2007,7.12
 monaco,2017,19.601
 mongolia,2017,7.901
@@ -318,7 +318,7 @@ myanmar,2017,1.61
 myanmar,2007,4.02
 namibia,2017,15.401
 namibia,2007,12.62
-nauru,2017,2
+nauru,2017,0
 nepal,2017,1.501
 nepal,2013,1.724
 netherlands,2017,2.601
@@ -350,11 +350,11 @@ palestine,2017,1.101
 palestine,2007,3.42
 panama,2017,10.801
 panama,2012,12.923
-papua-new-guinea,2017,11
+papua-new-guinea,2017,1
 papua-new-guinea,2007,1.22
 paraguay,2017,16.701
 paraguay,2012,15.424
-peru,2017,21
+peru,2017,2
 peru,2012,2.524
 philippines,2019,3.09
 pitcairn,NA,NA
@@ -380,7 +380,7 @@ san-marino,2017,14.401
 sao-tome-and-principe,2017,3.401
 saudi-arabia,2017,16.701
 saudi-arabia,2007,35.02
-senegal,2017,23
+senegal,2017,2
 senegal,2007,2.01
 serbia,2017,39.101
 serbia,2007,37.8224
@@ -425,7 +425,7 @@ sweden,2005,31.65
 switzerland,2016,34.795
 syria,2017,8.201
 syria,2007,3.92
-taiwan,2017,1
+taiwan,2017,0
 taiwan,2007,4.42
 tajikistan,2017,0.401
 tajikistan,2007,1.02
@@ -438,7 +438,7 @@ timor-leste,2007,0.32
 togo,2017,0.801
 togo,2007,1.02
 tokelau,NA,NA
-tonga,2017,81
+tonga,2017,8
 tonga,2002,0.792
 trinidad-and-tobago,2017,3.201
 trinidad-and-tobago,2012,2.223

@@ -9,7 +9,7 @@ options(browser="C:\\Program Files\\internet explorer\\iexplore.exe")
 
 
 #Define diretÃ³rio de trabalho
-setwd("C:/Users/aaaaaaaaaaaaaaaaaaaa/Desktop/R_Projects/Armed_Violence/Armed_Violence/02 - Raw Data")
+setwd("C:/Users/regis/Desktop/R_Projects/Armed_Violence/02 - Raw Data")
 
 #Define o vetor com nomes dos arquivos a serem lidos
 Originalvend <- read_csv("VetorEnd.csv")
@@ -18,7 +18,7 @@ vend <- str_sub(Originalvend$tmp, 43, -1)
 CriaDados <- function(end)
 {
   #Define novamente o diretÃ³rio de trabalho, pois vai ser alterado no vim da funÃ§Ã£o para gravaÃ§Ã£o
-  setwd("C:/Users/aaaaaaaaaaaaaaaaaaaa/Desktop/R_Projects/Armed_Violence/Armed_Violence/02 - Raw Data")
+  setwd("C:/Users/regis/Desktop/R_Projects/Armed_Violence/02 - Raw Data")
   
   #Remove http... do nome dos arquivos para deixar apenas o nome do pais
   Nome <- end
@@ -111,14 +111,14 @@ remove(tmp_1)
 remove(tmp_2)
 
 #Os seguinte paises foram alterados os RAW files pis os dados estavam com "Between":
-#Nova Zelandia, Suíça e Philipinas
+#Nova Zelandia, Su??a e Philipinas
 
 #Verificar erros de valores altos (nesse caso tomou-se o US e Brazil como base) 
 filter(Summary_Gun_per_100, Summary_Gun_per_100$Gun_per_100_Value  > 150)
 filter(Sumnary_Homicide_per_100000, 
        Sumnary_Homicide_per_100000$Homicide_per_100000_Value  > 50)
 
-#Corrige os erros com altos valores. Nesse caso apenas cyprus e montserrat estavão errados
+#Corrige os erros com altos valores. Nesse caso apenas cyprus e montserrat estavoo errados
 Summary_Gun_per_100[Summary_Gun_per_100$Country == "cyprus" & 
                       Summary_Gun_per_100$Gun_per_100_Value == 341, 3] = 34.0
 
@@ -126,8 +126,8 @@ Sumnary_Homicide_per_100000[
   Sumnary_Homicide_per_100000$Country == "montserrat" & 
     Sumnary_Homicide_per_100000$Homicide_per_100000_Value == 2553, 3] = 255
 
-#Verificando problemas das observações numéricas, normalmente o números muito afetados
-#não terão casas decimais assim podemos procurar:
+#Verificando problemas das observa??es num?ricas, normalmente o n?meros muito afetados
+#n?o ter?o casas decimais assim podemos procurar:
 tmp_1 <- filter(Summary_Gun_per_100, Summary_Gun_per_100$Gun_per_100_Value - 
                   as.integer(Summary_Gun_per_100$Gun_per_100_Value) == 0)
 
@@ -135,7 +135,7 @@ tmp_2 <- filter(Sumnary_Homicide_per_100000, Sumnary_Homicide_per_100000$Homicid
                   as.integer(Sumnary_Homicide_per_100000$Homicide_per_100000_Value) == 0)
 
 
-#Corrige dados de Summary_Gun_per_100 influenciados pelas observações do site: belize, chad, chad, costa-rica,      
+#Corrige dados de Summary_Gun_per_100 influenciados pelas observa??es do site: belize, chad, chad, costa-rica,      
 #cyprus, el-salvador, estonia, ghana, ghana, guinea, moldova, nauru, papua-new-guinea,
 #peru, senegal, taiwan e  tonga           
 NewValue_1 <- c(10, 1, 10, 34, 12, 5, 8, 2, 1, 3, 0,  1,  2,  2,  0,  8)
@@ -157,7 +157,7 @@ for(i in 1:length(tmp_3$Country))
   browseURL(CheckSite$tmp)
 }
 
-#Corrige dados de Sumnary_Homicide_per_100000 influenciados pelas observações do site:
+#Corrige dados de Sumnary_Homicide_per_100000 influenciados pelas observa??es do site:
 NewValue_2 <- c(0, 0,  0, 0, 0, 0, 0, 0, 0, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 1, 1, 3, 0, 0, 1, 0, 0,
                 0, 0, 0, 0, 0, 0, 21, 0,  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0,
                 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 255, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
@@ -171,7 +171,7 @@ for (i in 1:nrow(tmp_2))
 
 
 #Define local para salvar dados
-setwd("C:/Users/aaaaaaaaaaaaaaaaaaaa/Desktop/R_Projects/Armed_Violence/Armed_Violence/04 - Tidy Data")
+setwd("C:/Users/regis/Desktop/R_Projects/Armed_Violence/04 â€“ Tidy Data")
 
 #Salva dados Gun_per_100 em arquivo csv
 write_csv(Summary_Gun_per_100, "01_Summary_Gun_per_100.csv")
