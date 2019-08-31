@@ -59,6 +59,10 @@ for (i in 1:nrow(MissABV))
 #Adicionado Continentes aos paises
 Dados <- left_join(Dados, AbreviationReg)
 
+#Adicionado coluna de rank
+Dados$rankGun <-  rank(Dados$GunMed)
+Dados$rankHom <- rank(Dados$HomMed)
+
 #Salva dados da tabela gerada
 setwd("C:/Users/regis/Desktop/R_Projects/Armed_Violence/04 – Tidy Data")
 write_csv(Dados, "03_Summary_Gun_Homicide.csv")
