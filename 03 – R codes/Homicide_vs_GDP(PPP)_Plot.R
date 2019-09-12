@@ -22,7 +22,7 @@ Renda_Per_Capta$Rank <- NULL
 
 #Acerta o nome dos atributos
 colnames(Renda_Per_Capta)[2] <-  "Renda_per_Capta"
-colnames(abv)[2] <-  "ABV"
+colnames(abv)[2] <- "ABV"
 
 #Converter coluna em número
 Renda_Per_Capta$Renda_per_Capta <- parse_number(Renda_Per_Capta$Renda_per_Capta)
