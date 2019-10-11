@@ -91,7 +91,7 @@ GAN <- AN %>% ggplot(aes(Por_Desemp, HomMed, label = ABV)) + geom_point(size = 3
   ggtitle("Mortes por arma de fogo - America do Norte")
 GAS <- AS %>% ggplot(aes(Por_Desemp, HomMed, label = ABV)) + geom_point(size = 3, col = "darkgreen")  +
   geom_text(nudge_x = 0.8) + 
-  xlab("RTaxa de Desempregados (%)") +
+  xlab("Taxa de Desempregados (%)") +
   ylab("Taxa de homicidios por 100.000 habitantes") +
   ggtitle("Mortes por arma de fogo - America do Sul")
 GASI <- ASI %>% ggplot(aes(Por_Desemp, HomMed, label = ABV)) + geom_point(size = 3, col = "dimgray")  +

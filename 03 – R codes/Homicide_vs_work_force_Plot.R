@@ -109,7 +109,7 @@ GASI <- ASI %>% ggplot(aes(Forca_de_Trabalho, HomMed, label = ABV)) + geom_point
 GEU <- EU %>% ggplot(aes(Forca_de_Trabalho, HomMed, label = ABV)) + geom_point(size = 3, col = "coral")  +
   scale_x_continuous(labels=function(x) format(x, big.mark = ".", scientific = FALSE)) +
   geom_text(nudge_x = 2000000) + 
-  xlab("Renda per Capta US$") +
+  xlab("Forca de trabalho") +
   ylab("Taxa de homicidios por 100.000 habitantes") +
   ggtitle("Mortes por arma de fogo - Europa")
 GOC <- OC %>% ggplot(aes(Forca_de_Trabalho, HomMed, label = ABV)) + geom_point(size = 3, col = "darkmagenta")  +
