@@ -64,7 +64,7 @@ Grafico <- Dados %>% ggplot(aes(Inflacao_Per, HomMed, col = Continente)) + geom_
   ggtitle("Mortes por arma de fogo")
 Grafico
 
-#Removendo USA e HND,pois foi considerado OutLayer
+#Removendo VEN e SSD ,pois foi considerado OutLayer
 NDados <- Dados
 NDados <- NDados[NDados$ABV != "VEN",]
 NDados <- NDados[NDados$ABV != "SSD",]
@@ -89,15 +89,15 @@ Grafico <- NDados %>% ggplot(aes(Inflacao_Per, HomMed, col = Continente)) + geom
 Grafico + facet_grid(Continente ~ .)
 
 #Grpáficos por Continente
-AF <- filter(Dados, Continente == "Africa")
+AF <- filter(NDados, Continente == "Africa")
 AN <- filter(Dados, Continente == "America_do_Norte")
-AS <- filter(Dados, Continente == "America_do_Sul")
+AS <- filter(NDados, Continente == "America_do_Sul")
 ASI <- filter(Dados, Continente == "Asia")
 EU <- filter(Dados, Continente == "Europa")
 OC <- filter(Dados, Continente == "Oceania")
 
 GAF <- AF %>% ggplot(aes(Inflacao_Per, HomMed, label = ABV)) + geom_point(size = 3, col = "red")  +
-  geom_text(nudge_x = 7) + 
+  geom_text(nudge_x = 1.5) + 
   xlab("Inflacao anual em %") +
   ylab("Taxa de homicidios por 100.000 habitantes") +
   ggtitle("Mortes por arma de fogo - Africa") 
@@ -107,7 +107,7 @@ GAN <- AN %>% ggplot(aes(Inflacao_Per, HomMed, label = ABV)) + geom_point(size =
   ylab("Taxa de homicidios por 100.000 habitantes") +
   ggtitle("Mortes por arma de fogo - America do Norte")
 GAS <- AS %>% ggplot(aes(Inflacao_Per, HomMed, label = ABV)) + geom_point(size = 3, col = "darkgreen")  +
-  geom_text(nudge_x = 45) + 
+  geom_text(nudge_x = 1) + 
   xlab("Inflacao anual em %") +
   ylab("Taxa de homicidios por 100.000 habitantes") +
   ggtitle("Mortes por arma de fogo - America do Sul")
